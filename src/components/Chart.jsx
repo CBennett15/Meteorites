@@ -1,8 +1,8 @@
 import React from 'react';
 import { HorizontalBar } from 'react-chartjs-2';
 
-export const Chart = (years) => {
-  const yearObj = years.years;
+export const Chart = ({ years }) => {
+  const yearObj = years;
   const yearKeysArray = Object.keys(yearObj);
   const numOfFalls = yearKeysArray.map((year) => {
     return yearObj[year].length;
