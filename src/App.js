@@ -21,7 +21,7 @@ class App extends Component {
     return (
       <div className="App">
         <Title />
-        {this.state.year && <Chart years={this.state.year} />}
+
         <select className="selector" onChange={this.changeDecade}>
           <option value="date00s">1900-1909</option>
           <option value="date10s">1910-1919</option>
@@ -34,6 +34,7 @@ class App extends Component {
           <option value="date80s">1980-1989</option>
           <option value="date90s">1990-1999</option>
         </select>
+        {this.state.year && <Chart years={this.state.year} />}
         {this.state.dateRange && this.state.year && (
           <MeteoriteList
             dateRange={this.state.dateRange}
