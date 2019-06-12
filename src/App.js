@@ -12,12 +12,16 @@ class App extends Component {
     fallen: null,
     year: null,
     dateRange: null,
+    modalShow: false,
   };
   componentDidMount = () => {
     this.fetchMeteorites();
   };
-  componentDidUpdate = () => {};
+
   render() {
+    let modalClose = () => {
+      this.setState({ modalShow: false });
+    };
     return (
       <div className="App">
         <Title />
@@ -39,6 +43,8 @@ class App extends Component {
           <MeteoriteList
             dateRange={this.state.dateRange}
             year={this.state.year}
+            show={this.state.modalShow}
+            onHide={modalClose}
           />
         )}
       </div>
@@ -59,7 +65,7 @@ class App extends Component {
   changeDecade = (event) => {
     event.preventDefault();
     console.log('here');
-    this.setState({ dateRange: event.target.value });
+    this.setState({ dateRange: event.target.value, modalShow: true });
   };
 }
 
