@@ -2,11 +2,10 @@ import React from 'react';
 import { Card, Modal } from 'react-bootstrap';
 
 export const MeteoriteList = ({ year, dateRange, show, onHide }) => {
-  console.log(year, dateRange);
   return (
     <div>
-      <h2>Meteor List</h2>
-      <Modal size="lg" centered show={show}>
+      <Modal size="md" centered show={show}>
+        <h2 className="text-center">Meteor List</h2>
         <ul className="list">
           {year[dateRange].map((meteor) => {
             return (
