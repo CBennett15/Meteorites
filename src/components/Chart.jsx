@@ -25,7 +25,7 @@ export const Chart = ({ years }) => {
 
   return (
     <div>
-      <h2>Number of falls per decade</h2>
+      <h2 className="text-light">Number of falls per decade</h2>
       <HorizontalBar data={data} />
     </div>
   );

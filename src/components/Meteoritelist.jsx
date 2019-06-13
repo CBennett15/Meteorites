@@ -19,6 +19,7 @@ export const MeteoriteList = ({ year, dateRange, show, onHide }) => {
                   className="text-center"
                   bg="info"
                   text="white"
+                  key={meteor.id}
                 >
                   <li key={meteor.id}>
                     <h3>Name:{meteor.name}</h3>
