@@ -1,23 +1,18 @@
 .App {
+  align-content: center;
   background-image: url(/assets/fernando-rodrigues-745616-unsplash.jpg);
   text-align: center;
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100%;
+
+  margin: 0;
+  padding: 0;
 }
-/* body {
-   background-image: url('/assets/fernando-rodrigues-745616-unsplash.jpg');
-} */
-
-
 
 .modal {
   overflow: hidden;
 }
 
-/* .modal-body {
-  position: absolute;
-  overflow-y: scroll;
-} */
+
 

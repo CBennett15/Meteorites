@@ -13,7 +13,8 @@ export const Chart = ({ years }) => {
     datasets: [
       {
         label: 'Meteorite Falls',
-        backgroundColor: 'rgba(255,99,132,0.2)',
+       
+        backgroundColor: 'rgba(214,110,129,0.8)',
         borderColor: 'rgba(255,99,132,1)',
         borderWidth: 1,
         hoverBackgroundColor: 'rgba(255,99,132,0.4)',
@@ -22,6 +23,7 @@ export const Chart = ({ years }) => {
       },
     ],
   };
+
 
   return (
     <div>
