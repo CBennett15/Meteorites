@@ -6,8 +6,8 @@ export const MeteoriteList = ({ year, dateRange, show, onHide }) => {
   return (
     <div>
       <Modal size="md" centered show={show} className="modal">
-        <h2 className="text-center">Meteor List</h2>
         <ModalHeader className="modal-header">
+        <h2 className="text-center">Meteor List</h2>
           <button onClick={onHide}>Close</button>
         </ModalHeader>
         <ModalBody className="modal-body">

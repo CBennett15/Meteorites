@@ -65,7 +65,6 @@ class App extends Component {
   };
   changeDecade = (event) => {
     event.preventDefault();
-    console.log('here');
     this.setState({ dateRange: event.target.value, modalShow: true });
   };
 }
