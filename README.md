@@ -4,6 +4,8 @@ This is a web app project built with React that uses NASA API to get data of met
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+The link to the hosted site can be found here https://meteorites-cb.netlify.com/
+
 ## Getting Started
 This is a guide to help you clone the project and run it locally.
 
