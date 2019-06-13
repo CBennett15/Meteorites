@@ -23,12 +23,34 @@ export const Chart = ({ years }) => {
       },
     ],
   };
-
+const options = {
+  legend: {
+    labels: {
+    fontColor: 'white',
+    },
+  },
+  scales: {
+    yAxes: [
+      {
+        ticks: {
+          fontColor: 'white'
+        }
+      }
+    ],
+    xAxes: [
+      {
+        ticks: {
+          fontColor: 'white'
+        }
+      }
+    ]
+  }
+};
 
   return (
     <div>
       <h2 className="text-light">Number of falls per decade</h2>
-      <HorizontalBar data={data} />
+      <HorizontalBar data={data} options={options}/>
     </div>
   );
 };
